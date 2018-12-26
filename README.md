@@ -16,7 +16,30 @@ All of this package's dependencies are bundled with the code in the `vendor` dir
 
 ### proxy-server
 
-Too soon.
+```
+./bin/proxy-server -h
+Usage of ./bin/proxy-server:
+  -brooklyn-integers
+	Use Brooklyn Integers as an artisanal integer source.
+  -dsn string
+       A valid SQLite DSN string. (default ":memory:")
+  -host string
+    	Host to listen on. (default "localhost")
+  -httptest.serve string
+    		  if non-empty, httptest.NewServer serves on this address and blocks
+  -loglevel string
+    	    Log level. (default "info")
+  -london-integers
+	Use London Integers as an artisanal integer source.
+  -min int
+       The minimum number of artisanal integers to keep on hand at all times. (default 5)
+  -mission-integers
+	Use Mission Integers as an artisanal integer source.
+  -port int
+    	Port to listen on. (default 8080)
+  -protocol string
+    	    The protocol to use for the proxy server. (default "http")
+```
 
 ## See also:
 
